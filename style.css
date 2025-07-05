@@ -275,8 +275,27 @@ a{
     .grid{
         grid-template-columns: repeat(2, 1fr);
     }
+    .contact-box {
+        flex-direction: row;
+    }
 
+    .contact-img {
+        flex: 1;
+    }
 
+    .contact-text{
+        flex: 1;
+    }
+
+    .footer-inner{
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+    }
 }
 
-
+@media (min-width: 1024px){
+    .grid{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
